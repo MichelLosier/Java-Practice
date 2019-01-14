@@ -8,7 +8,7 @@ public class CLICommand{
     private String commandString;
     private String action;
     private String target;
-    private HashMap<String, String> arguments;
+    private HashMap<String, String> arguments = new HashMap<String, String>();
 
     public CLICommand(String commandString) throws Exception {
         this.commandString = commandString;
@@ -53,7 +53,7 @@ public class CLICommand{
                     String arg = cmdArray.get(i);
 
                     if(arg.charAt(0) == '-'){
-                       String key = arg;
+                       String key = arg.substring(1);
                        String nextArg = cmdArray.get(i + 1);
                        if(nextArg.charAt(0) != '-'){
                            String value = nextArg;

@@ -12,8 +12,8 @@ public class Main {
 
         CLIParser fooBarCLI = new CLIParser(fooBar);
         fooBarCLI.listAllOptions();
-        fooBarCLI.interpretCommand("GET foo");
-        fooBarCLI.interpretCommand("GET bar");
+        fooBarCLI.interpretCommand("get foo");
+        fooBarCLI.interpretCommand("get bar");
 
         Scanner input = new Scanner(System.in);
 

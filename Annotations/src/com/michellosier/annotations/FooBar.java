@@ -12,7 +12,7 @@ public class FooBar {
     }
 
     @CLIOption(
-        action = CLIOption.Action.GET,
+        action = "get",
         target = "foo",
         description = "Get the value of foo"
     )
@@ -25,7 +25,7 @@ public class FooBar {
     }
 
     @CLIOption(
-        action = CLIOption.Action.GET,
+        action = "get",
         target = "bar",
         description = "Get the value of bar"
     )
@@ -44,7 +44,7 @@ public class FooBar {
     }
 
     @CLIOption(
-            action = CLIOption.Action.SET,
+            action = "set",
             target = "foo",
             description = "Set value of foo"
     )
