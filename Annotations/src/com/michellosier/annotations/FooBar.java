@@ -48,8 +48,7 @@ public class FooBar {
             target = "foo",
             description = "Set value of foo"
     )
-    public void setFooCLI(
-            @CLIParam(longName="value", shortName="v", value="string") String f){
+    public void setFooCLI(@CLIParam(longName="value", shortName="v", value="string") String f) {
        setFoo(f);
        System.out.println(this.foo);
     }
