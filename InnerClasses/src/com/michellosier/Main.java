@@ -6,6 +6,7 @@ public class Main {
 	    Gearbox mcLaren = new Gearbox(6);
 
 		mcLaren.addGear(1, 12.3);
+        mcLaren.addGear(2, 10.6);
 
     }
 }
